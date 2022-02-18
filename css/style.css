@@ -181,12 +181,6 @@ body._loaded {
 .acces-preloader__text {
   padding-bottom: 0.375rem;
 }
-.acces-preloader__buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.625rem;
-}
 .acces-preloader__button {
   position: relative;
 }
@@ -568,6 +562,15 @@ body._loaded {
   left: 5.625rem;
   opacity: 0;
 }
+.item-game__arrow-bonus {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 10px solid red;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
 .item-game__pin {
   position: absolute;
   bottom: -10rem;
@@ -636,6 +639,10 @@ body._loaded {
   bottom: -0.625rem;
   left: 0;
 }
+.item-game__min-knife._hide {
+  opacity: 0;
+  visibility: hidden;
+}
 .gold-peace-8,
 .count-peace-8,
 .gold-peace-11,
@@ -673,6 +680,60 @@ body._loaded {
 .gold-peace-10._visible,
 .count-peace-10._visible {
   opacity: 1;
+}
+
+.bonus-game__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7.1875rem;
+}
+@media (max-width: 23.75em) {
+  .bonus-game__box {
+    margin-top: 3.75rem;
+  }
+}
+.bonus-game__button {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-top: 6.25rem;
+}
+.bonus-game__button:active {
+  transform: translateY(3px);
+}
+.bonus-game__button-text {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.item-bonus-game__wheel {
+  position: relative;
+}
+.item-bonus-game__circle {
+  position: relative;
+}
+.item-bonus-game__arrow-pin {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.item-bonus-game__arrow-marker {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  width: 1px;
+  height: 1px;
+  transform: translateX(-50%);
+  opacity: 0;
 }
 
 .play-again {
