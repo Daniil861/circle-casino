@@ -3135,6 +3135,7 @@
         if (document.querySelector(".game")) document.querySelector(".header__block-text p").innerHTML = sessionStorage.getItem("gold_point");
         if (document.querySelector(".content")) document.querySelector(".header__block-text p").innerHTML = sessionStorage.getItem("gold_point");
         if (document.querySelector(".shop")) document.querySelector(".header__block-text p").innerHTML = sessionStorage.getItem("gold_point");
+        if (document.querySelector(".bonus-game")) document.querySelector(".header__block-text p").innerHTML = sessionStorage.getItem("gold_point");
     }
     if (document.querySelector(".game")) {
         if ("1" == sessionStorage.getItem("active-knife")) document.querySelector(".item-game__knife_one").classList.remove("_hide");
@@ -3143,19 +3144,21 @@
         if ("4" == sessionStorage.getItem("active-knife")) document.querySelector(".item-game__knife_four").classList.remove("_hide");
     }
     const arrow = document.querySelector(".item-game__arrow");
+    const marker = document.querySelector(".item-bonus-game__arrow-marker");
     const bullet = document.querySelectorAll(".game__bullet");
     const play_again = document.querySelector(".play-again");
     const pin_one = document.querySelector(".item-game__pin_one");
     const pin_two = document.querySelector(".item-game__pin_two");
     const pin_three = document.querySelector(".item-game__pin_three");
     const pin_four = document.querySelector(".item-game__pin_four");
+    const circle = document.querySelector(".item-game__circle");
+    const circle_bonus = document.querySelector(".item-bonus-game__circle");
     const preloader = document.querySelector(".preloader");
     const wrapper = document.querySelector(".wrapper");
     let points = document.querySelector(".header__block-text p");
     let stage = document.querySelector(".game__title span");
     let count = 0;
     var lastRotate = 0;
-    const circle = document.querySelector(".item-game__circle");
     if (document.querySelector(".content")) {
         sessionStorage.setItem("gold_point", points.innerHTML);
         if (sessionStorage.getItem("knife2")) {
@@ -3183,7 +3186,7 @@
             sessionStorage.setItem("preloader", true);
             wrapper.classList.add("_visible");
         }
-        if (targetElement.closest(".item-game__circle-hiden-button")) if (count >= 0 && count < 3) {
+        if (targetElement.closest(".item-game__circle-hiden-button")) if (count >= 0 && count < 5) {
             lastRotate += Math.random() * (5e3 - 500) + 500;
             circle.style.transform = `rotate(${lastRotate}deg)`;
             circle.style.transition = "2s";
@@ -3296,7 +3299,7 @@
                         target_block.closest(".peace-4").dataset.point = 0;
                     }
                 }
-                if (count < 3) {
+                if (count < 5) {
                     bullet.forEach((el => {
                         if (el.classList.contains("_active")) el.classList.remove("_active");
                     }));
@@ -3305,7 +3308,10 @@
                     }));
                     stage.textContent = count + 1;
                 }
-                if (3 == count) {
+                if (1 == count) document.querySelector(".item-game__min-knife_one").classList.add("_hide"); else if (2 == count) document.querySelector(".item-game__min-knife_two").classList.add("_hide");
+                if (3 == count) document.querySelector(".item-game__min-knife_three").classList.add("_hide");
+                if (4 == count) document.querySelector(".item-game__min-knife_four").classList.add("_hide"); else if (5 == count) {
+                    document.querySelector(".item-game__min-knife_five").classList.add("_hide");
                     play_again.classList.add("_visible");
                     document.querySelector(".wrapper").classList.add("_bg");
                     if (sessionStorage.getItem("gold_point") >= 10) ; else {
@@ -3336,6 +3342,77 @@
                     pin_four.classList.add("_visible");
                 }), 1e3);
             }
+        }
+        if (targetElement.closest(".bonus-game__button")) {
+            lastRotate += Math.random() * (5e3 - 500) + 500;
+            circle_bonus.style.transform = `rotate(${lastRotate}deg)`;
+            circle_bonus.style.transition = "2s";
+            document.querySelector(".bonus-game__button").style.pointerEvents = "none";
+            setTimeout((() => {
+                document.querySelector(".bonus-game__button").style.pointerEvents = "fill";
+            }), 2500);
+            setTimeout((() => {
+                let arrow_top = marker.getBoundingClientRect().top;
+                let arrow_left = marker.getBoundingClientRect().left;
+                let target_block = document.elementFromPoint(arrow_left, arrow_top + 20);
+                if (target_block.closest(".peace-8")) if (target_block.closest(".peace-8").dataset.point) {
+                    let point = target_block.closest(".peace-8").dataset.point;
+                    let a = +point;
+                    let b = +points.innerHTML;
+                    points.innerHTML = a + b;
+                    sessionStorage.setItem("gold_point", a + b);
+                }
+                if (target_block.closest(".peace-11")) if (target_block.closest(".peace-11").dataset.point) {
+                    let point = target_block.closest(".peace-11").dataset.point;
+                    let a = +point;
+                    let b = +points.innerHTML;
+                    points.innerHTML = a + b;
+                    sessionStorage.setItem("gold_point", a + b);
+                }
+                if (target_block.closest(".peace-12")) if (target_block.closest(".peace-12").dataset.point) {
+                    let point = target_block.closest(".peace-12").dataset.point;
+                    let a = +point;
+                    let b = +points.innerHTML;
+                    points.innerHTML = a + b;
+                    sessionStorage.setItem("gold_point", a + b);
+                }
+                if (target_block.closest(".peace-3")) if (target_block.closest(".peace-3").dataset.point) {
+                    let point = target_block.closest(".peace-3").dataset.point;
+                    let a = +point;
+                    let b = +points.innerHTML;
+                    points.innerHTML = a + b;
+                    sessionStorage.setItem("gold_point", a + b);
+                }
+                if (target_block.closest(".peace-7")) sessionStorage.setItem("knife2", true);
+                if (target_block.closest(".peace-2")) if (target_block.closest(".peace-2").dataset.point) {
+                    let point = target_block.closest(".peace-2").dataset.point;
+                    let a = +point;
+                    let b = +points.innerHTML;
+                    points.innerHTML = a + b;
+                    sessionStorage.setItem("gold_point", a + b);
+                }
+                if (target_block.closest(".peace-9")) if (target_block.closest(".peace-9").dataset.point) {
+                    let point = target_block.closest(".peace-9").dataset.point;
+                    let a = +point;
+                    let b = +points.innerHTML;
+                    points.innerHTML = a + b;
+                    sessionStorage.setItem("gold_point", a + b);
+                }
+                if (target_block.closest(".peace-10")) if (target_block.closest(".peace-10").dataset.point) {
+                    let point = target_block.closest(".peace-10").dataset.point;
+                    let a = +point;
+                    let b = +points.innerHTML;
+                    points.innerHTML = a + b;
+                    sessionStorage.setItem("gold_point", a + b);
+                }
+                if (target_block.closest(".peace-4")) if (target_block.closest(".peace-4").dataset.point) {
+                    let point = target_block.closest(".peace-4").dataset.point;
+                    let a = +point;
+                    let b = +points.innerHTML;
+                    points.innerHTML = a + b;
+                    sessionStorage.setItem("gold_point", a + b);
+                }
+            }), 2e3);
         }
         if (targetElement.closest(".content__button") && document.querySelector(".content")) {
             if ("1" == document.querySelector(".swiper-slide-active").dataset.marker) sessionStorage.setItem("active-knife", 1);
