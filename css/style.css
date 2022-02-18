@@ -259,6 +259,9 @@ body._loaded {
   top: -4px;
   left: -8px;
 }
+.header__gold._jump {
+  animation: jump 0.6s ease;
+}
 .header__gold img {
   width: 3.75rem;
 }
@@ -272,6 +275,9 @@ body._loaded {
 }
 .header__block-text._anim p {
   animation: move-points 1s ease;
+}
+.header__block-text._anim-size p {
+  animation: move-points-size 0.6s ease;
 }
 .header__block-text p {
   font-weight: 700;
@@ -815,6 +821,55 @@ body._loaded {
   100% {
     color: red;
     font-size: 1rem;
+  }
+}
+@keyframes move-points-size {
+  0% {
+    color: yellow;
+  }
+  20% {
+    color: yellow;
+    font-size: 1.25rem;
+  }
+  35% {
+    color: yellow;
+    font-size: 1.375rem;
+  }
+  45% {
+    color: yellow;
+    font-size: 1.5rem;
+  }
+  55% {
+    color: yellow;
+    font-size: 1.375rem;
+  }
+  70% {
+    color: yellow;
+    font-size: 1.25rem;
+  }
+  100% {
+    color: yellow;
+    font-size: 1.125rem;
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-12px) rotate(5deg);
+  }
+  30% {
+    transform: translateY(-12px) rotate(-5deg);
+  }
+  40% {
+    transform: translateY(-12px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 .swiper {
