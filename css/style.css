@@ -598,14 +598,26 @@ body._loaded {
 .item-game__pin_two {
   transform: rotate(-20deg);
 }
+.item-game__pin_two._visible {
+  left: 4.5rem;
+  bottom: -2.8125rem;
+}
 .item-game__pin_two img {
   max-width: 2.5rem;
 }
 .item-game__pin_three {
   transform: rotate(-40deg);
 }
+.item-game__pin_three._visible {
+  left: 4.1875rem;
+  bottom: -1.5rem;
+}
 .item-game__pin_four {
   transform: rotate(-35deg);
+}
+.item-game__pin_four._visible {
+  left: 4.1875rem;
+  bottom: -1.9375rem;
 }
 .item-game__knifes {
   position: relative;
