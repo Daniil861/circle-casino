@@ -3209,6 +3209,12 @@
                         points.innerHTML = a + b;
                         sessionStorage.setItem("gold_point", a + b);
                         target_block.closest(".peace-8").dataset.point = 0;
+                        document.querySelector(".header__gold").classList.add("_jump");
+                        document.querySelector(".header__block-text").classList.add("_anim-size");
+                        setTimeout((() => {
+                            document.querySelector(".header__gold").classList.remove("_jump");
+                            document.querySelector(".header__block-text").classList.remove("_anim-size");
+                        }), 1e3);
                     }
                 }
                 if (target_block.closest(".peace-11")) {
@@ -3221,6 +3227,12 @@
                         points.innerHTML = a + b;
                         sessionStorage.setItem("gold_point", a + b);
                         target_block.closest(".peace-11").dataset.point = 0;
+                        document.querySelector(".header__gold").classList.add("_jump");
+                        document.querySelector(".header__block-text").classList.add("_anim-size");
+                        setTimeout((() => {
+                            document.querySelector(".header__gold").classList.remove("_jump");
+                            document.querySelector(".header__block-text").classList.remove("_anim-size");
+                        }), 1e3);
                     }
                 }
                 if (target_block.closest(".peace-12")) {
@@ -3233,6 +3245,12 @@
                         points.innerHTML = a + b;
                         sessionStorage.setItem("gold_point", a + b);
                         target_block.closest(".peace-12").dataset.point = 0;
+                        document.querySelector(".header__gold").classList.add("_jump");
+                        document.querySelector(".header__block-text").classList.add("_anim-size");
+                        setTimeout((() => {
+                            document.querySelector(".header__gold").classList.remove("_jump");
+                            document.querySelector(".header__block-text").classList.remove("_anim-size");
+                        }), 1e3);
                     }
                 }
                 if (target_block.closest(".peace-3")) {
@@ -3245,6 +3263,12 @@
                         points.innerHTML = a + b;
                         sessionStorage.setItem("gold_point", a + b);
                         target_block.closest(".peace-3").dataset.point = 0;
+                        document.querySelector(".header__gold").classList.add("_jump");
+                        document.querySelector(".header__block-text").classList.add("_anim-size");
+                        setTimeout((() => {
+                            document.querySelector(".header__gold").classList.remove("_jump");
+                            document.querySelector(".header__block-text").classList.remove("_anim-size");
+                        }), 1e3);
                     }
                 }
                 if (target_block.closest(".peace-7")) {
@@ -3261,6 +3285,12 @@
                         points.innerHTML = a + b;
                         sessionStorage.setItem("gold_point", a + b);
                         target_block.closest(".peace-2").dataset.point = 0;
+                        document.querySelector(".header__gold").classList.add("_jump");
+                        document.querySelector(".header__block-text").classList.add("_anim-size");
+                        setTimeout((() => {
+                            document.querySelector(".header__gold").classList.remove("_jump");
+                            document.querySelector(".header__block-text").classList.remove("_anim-size");
+                        }), 1e3);
                     }
                 }
                 if (target_block.closest(".peace-9")) {
@@ -3273,6 +3303,12 @@
                         points.innerHTML = a + b;
                         sessionStorage.setItem("gold_point", a + b);
                         target_block.closest(".peace-9").dataset.point = 0;
+                        document.querySelector(".header__gold").classList.add("_jump");
+                        document.querySelector(".header__block-text").classList.add("_anim-size");
+                        setTimeout((() => {
+                            document.querySelector(".header__gold").classList.remove("_jump");
+                            document.querySelector(".header__block-text").classList.remove("_anim-size");
+                        }), 1e3);
                     }
                 }
                 if (target_block.closest(".peace-10")) {
@@ -3285,6 +3321,12 @@
                         points.innerHTML = a + b;
                         sessionStorage.setItem("gold_point", a + b);
                         target_block.closest(".peace-10").dataset.point = 0;
+                        document.querySelector(".header__gold").classList.add("_jump");
+                        document.querySelector(".header__block-text").classList.add("_anim-size");
+                        setTimeout((() => {
+                            document.querySelector(".header__gold").classList.remove("_jump");
+                            document.querySelector(".header__block-text").classList.remove("_anim-size");
+                        }), 1e3);
                     }
                 }
                 if (target_block.closest(".peace-4")) {
@@ -3297,6 +3339,12 @@
                         points.innerHTML = a + b;
                         sessionStorage.setItem("gold_point", a + b);
                         target_block.closest(".peace-4").dataset.point = 0;
+                        document.querySelector(".header__gold").classList.add("_jump");
+                        document.querySelector(".header__block-text").classList.add("_anim-size");
+                        setTimeout((() => {
+                            document.querySelector(".header__gold").classList.remove("_jump");
+                            document.querySelector(".header__block-text").classList.remove("_anim-size");
+                        }), 1e3);
                     }
                 }
                 if (count < 5) {
@@ -3361,6 +3409,12 @@
                     let b = +points.innerHTML;
                     points.innerHTML = a + b;
                     sessionStorage.setItem("gold_point", a + b);
+                    document.querySelector(".header__gold").classList.add("_jump");
+                    document.querySelector(".header__block-text").classList.add("_anim-size");
+                    setTimeout((() => {
+                        document.querySelector(".header__gold").classList.remove("_jump");
+                        document.querySelector(".header__block-text").classList.remove("_anim-size");
+                    }), 1e3);
                 }
                 if (target_block.closest(".peace-11")) if (target_block.closest(".peace-11").dataset.point) {
                     let point = target_block.closest(".peace-11").dataset.point;
@@ -3368,6 +3422,12 @@
                     let b = +points.innerHTML;
                     points.innerHTML = a + b;
                     sessionStorage.setItem("gold_point", a + b);
+                    document.querySelector(".header__gold").classList.add("_jump");
+                    document.querySelector(".header__block-text").classList.add("_anim-size");
+                    setTimeout((() => {
+                        document.querySelector(".header__gold").classList.remove("_jump");
+                        document.querySelector(".header__block-text").classList.remove("_anim-size");
+                    }), 1e3);
                 }
                 if (target_block.closest(".peace-12")) if (target_block.closest(".peace-12").dataset.point) {
                     let point = target_block.closest(".peace-12").dataset.point;
@@ -3375,6 +3435,12 @@
                     let b = +points.innerHTML;
                     points.innerHTML = a + b;
                     sessionStorage.setItem("gold_point", a + b);
+                    document.querySelector(".header__gold").classList.add("_jump");
+                    document.querySelector(".header__block-text").classList.add("_anim-size");
+                    setTimeout((() => {
+                        document.querySelector(".header__gold").classList.remove("_jump");
+                        document.querySelector(".header__block-text").classList.remove("_anim-size");
+                    }), 1e3);
                 }
                 if (target_block.closest(".peace-3")) if (target_block.closest(".peace-3").dataset.point) {
                     let point = target_block.closest(".peace-3").dataset.point;
@@ -3382,6 +3448,12 @@
                     let b = +points.innerHTML;
                     points.innerHTML = a + b;
                     sessionStorage.setItem("gold_point", a + b);
+                    document.querySelector(".header__gold").classList.add("_jump");
+                    document.querySelector(".header__block-text").classList.add("_anim-size");
+                    setTimeout((() => {
+                        document.querySelector(".header__gold").classList.remove("_jump");
+                        document.querySelector(".header__block-text").classList.remove("_anim-size");
+                    }), 1e3);
                 }
                 if (target_block.closest(".peace-7")) sessionStorage.setItem("knife2", true);
                 if (target_block.closest(".peace-2")) if (target_block.closest(".peace-2").dataset.point) {
@@ -3390,6 +3462,12 @@
                     let b = +points.innerHTML;
                     points.innerHTML = a + b;
                     sessionStorage.setItem("gold_point", a + b);
+                    document.querySelector(".header__gold").classList.add("_jump");
+                    document.querySelector(".header__block-text").classList.add("_anim-size");
+                    setTimeout((() => {
+                        document.querySelector(".header__gold").classList.remove("_jump");
+                        document.querySelector(".header__block-text").classList.remove("_anim-size");
+                    }), 1e3);
                 }
                 if (target_block.closest(".peace-9")) if (target_block.closest(".peace-9").dataset.point) {
                     let point = target_block.closest(".peace-9").dataset.point;
@@ -3397,6 +3475,12 @@
                     let b = +points.innerHTML;
                     points.innerHTML = a + b;
                     sessionStorage.setItem("gold_point", a + b);
+                    document.querySelector(".header__gold").classList.add("_jump");
+                    document.querySelector(".header__block-text").classList.add("_anim-size");
+                    setTimeout((() => {
+                        document.querySelector(".header__gold").classList.remove("_jump");
+                        document.querySelector(".header__block-text").classList.remove("_anim-size");
+                    }), 1e3);
                 }
                 if (target_block.closest(".peace-10")) if (target_block.closest(".peace-10").dataset.point) {
                     let point = target_block.closest(".peace-10").dataset.point;
@@ -3404,6 +3488,12 @@
                     let b = +points.innerHTML;
                     points.innerHTML = a + b;
                     sessionStorage.setItem("gold_point", a + b);
+                    document.querySelector(".header__gold").classList.add("_jump");
+                    document.querySelector(".header__block-text").classList.add("_anim-size");
+                    setTimeout((() => {
+                        document.querySelector(".header__gold").classList.remove("_jump");
+                        document.querySelector(".header__block-text").classList.remove("_anim-size");
+                    }), 1e3);
                 }
                 if (target_block.closest(".peace-4")) if (target_block.closest(".peace-4").dataset.point) {
                     let point = target_block.closest(".peace-4").dataset.point;
@@ -3411,6 +3501,12 @@
                     let b = +points.innerHTML;
                     points.innerHTML = a + b;
                     sessionStorage.setItem("gold_point", a + b);
+                    document.querySelector(".header__gold").classList.add("_jump");
+                    document.querySelector(".header__block-text").classList.add("_anim-size");
+                    setTimeout((() => {
+                        document.querySelector(".header__gold").classList.remove("_jump");
+                        document.querySelector(".header__block-text").classList.remove("_anim-size");
+                    }), 1e3);
                 }
             }), 2e3);
         }
