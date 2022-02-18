@@ -3202,7 +3202,7 @@
                 if (target_block.closest(".peace-8")) {
                     document.querySelector(".gold-peace-8").style.opacity = "1";
                     document.querySelector(".count-peace-8").style.opacity = "1";
-                    if (target_block.closest(".peace-8").dataset.point) {
+                    if (target_block.closest(".peace-8").dataset.point && 0 != target_block.closest(".peace-8").dataset.point) {
                         let point = target_block.closest(".peace-8").dataset.point;
                         let a = +point;
                         let b = +points.innerHTML;
@@ -3220,7 +3220,7 @@
                 if (target_block.closest(".peace-11")) {
                     document.querySelector(".gold-peace-11").style.opacity = "1";
                     document.querySelector(".count-peace-11").style.opacity = "1";
-                    if (target_block.closest(".peace-11").dataset.point) {
+                    if (target_block.closest(".peace-11").dataset.point && 0 != target_block.closest(".peace-11").dataset.point) {
                         let point = target_block.closest(".peace-11").dataset.point;
                         let a = +point;
                         let b = +points.innerHTML;
@@ -3238,7 +3238,7 @@
                 if (target_block.closest(".peace-12")) {
                     document.querySelector(".gold-peace-12").style.opacity = "1";
                     document.querySelector(".count-peace-12").style.opacity = "1";
-                    if (target_block.closest(".peace-12").dataset.point) {
+                    if (target_block.closest(".peace-12").dataset.point && 0 != target_block.closest(".peace-12").dataset.point) {
                         let point = target_block.closest(".peace-12").dataset.point;
                         let a = +point;
                         let b = +points.innerHTML;
@@ -3256,7 +3256,7 @@
                 if (target_block.closest(".peace-3")) {
                     document.querySelector(".gold-peace-3").style.opacity = "1";
                     document.querySelector(".count-peace-3").style.opacity = "1";
-                    if (target_block.closest(".peace-3").dataset.point) {
+                    if (target_block.closest(".peace-3").dataset.point && 0 != target_block.closest(".peace-3").dataset.point) {
                         let point = target_block.closest(".peace-3").dataset.point;
                         let a = +point;
                         let b = +points.innerHTML;
@@ -3278,7 +3278,7 @@
                 if (target_block.closest(".peace-2")) {
                     document.querySelector(".gold-peace-2").style.opacity = "1";
                     document.querySelector(".count-peace-2").style.opacity = "1";
-                    if (target_block.closest(".peace-2").dataset.point) {
+                    if (target_block.closest(".peace-2").dataset.point && 0 != target_block.closest(".peace-2").dataset.point) {
                         let point = target_block.closest(".peace-2").dataset.point;
                         let a = +point;
                         let b = +points.innerHTML;
@@ -3296,7 +3296,7 @@
                 if (target_block.closest(".peace-9")) {
                     document.querySelector(".gold-peace-9").style.opacity = "1";
                     document.querySelector(".count-peace-9").style.opacity = "1";
-                    if (target_block.closest(".peace-9").dataset.point) {
+                    if (target_block.closest(".peace-9").dataset.point && 0 != target_block.closest(".peace-9").dataset.point) {
                         let point = target_block.closest(".peace-9").dataset.point;
                         let a = +point;
                         let b = +points.innerHTML;
@@ -3314,7 +3314,7 @@
                 if (target_block.closest(".peace-10")) {
                     document.querySelector(".gold-peace-10").style.opacity = "1";
                     document.querySelector(".count-peace-10").style.opacity = "1";
-                    if (target_block.closest(".peace-10").dataset.point) {
+                    if (target_block.closest(".peace-10").dataset.point && 0 != target_block.closest(".peace-10").dataset.point) {
                         let point = target_block.closest(".peace-10").dataset.point;
                         let a = +point;
                         let b = +points.innerHTML;
@@ -3332,7 +3332,7 @@
                 if (target_block.closest(".peace-4")) {
                     document.querySelector(".gold-peace-4").style.opacity = "1";
                     document.querySelector(".count-peace-4").style.opacity = "1";
-                    if (target_block.closest(".peace-4").dataset.point) {
+                    if (target_block.closest(".peace-4").dataset.point && 0 != target_block.closest(".peace-4").dataset.point) {
                         let point = target_block.closest(".peace-4").dataset.point;
                         let a = +point;
                         let b = +points.innerHTML;
