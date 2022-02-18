@@ -343,7 +343,7 @@ body._loaded {
   align-items: center;
 }
 .content__slide {
-  transform: scale(0.7);
+  transform: scale(0.7) !important;
   transition: all 0.3s ease 0s;
 }
 .content__knife {
@@ -423,7 +423,7 @@ body._loaded {
 }
 
 .swiper-slide-active {
-  transform: scale(1.2);
+  transform: scale(1.2) !important;
 }
 
 .shop__box {
